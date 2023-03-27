@@ -1,0 +1,93 @@
+import java.util.*; // Detta är en Java-kod för ett Tic Tac Toe-spel. Koden importerar klassen "Scanner" från paketet "java.util" för att ta input från användaren. Koden innehåller två klasser: "Karlo" och "TicTacToe".
+public class main{
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+      }
+    }
+    public class TicTacToe //"Huvudmetoden" initierar en 3x3-bräda med understreck, som representerar tomma celler. Den tar sedan input från användaren för rad och kolumn
+    {
+
+   static char [] board = new char [3][3]; //3*3 = 9 integerar som represneterar positioner på tic tac toe platformen 
+   static Scanner Sc = new Scanner (System.in); // skannar efter användarnamnet 
+   static char player = "X"; //kontrollerar om draget är giltigt, uppdaterar spelplanen med spelarens symbol ('X' eller 'O') och kontrollerar om villkoren för vinst eller oavgjort. "checkWin"-metoden kontrollerar om en spelare har vunnit spelet genom att ha alla "X" eller "O" i en rad, kolumn eller diagonal. 
+   
+
+   public static void main(String [] args)
+   {
+   
+    for (int i = 0; i < 3; i++)
+    for (int j = 0; j < 3; i++)
+    board [i][j] = '_'; 
+
+
+   
+  
+  }
+
+
+    PrintBoard();
+    While (true)
+    {
+    System.out.println("Enter row (0,1,2) for player" + player + ": "); // spelet skall skriva ut ett meddelande till användaren som har skapats 
+    int row = sc.nextInt(); // scanner metod som används för att skanna nästa token som en "int"
+    System.out.println ("Enter collum (0,1,2) for player" + player + ": "); //det användaren skriver in printas ut
+    int col = sc.nextInt(); //scanner metod som används för att skanna nästa token som en "int" i detta fall collum
+
+    }
+
+    if (row >= 0 && row < 3 && col >= 0 && col < 3 && board [row][col] =='_'){
+    if (checkWin(player)) 
+    {
+
+     System.out.println("player"+ player "wins!"); //kallar på att spelaren vinner, player är namnet som splearen har valt, det kommer stå player + namnet man har valt "wins!"
+     break;
+    
+    }
+    
+    else if (checkDraw(player))
+    {
+
+     System.out.println("Player vs" Player "is a tie"); //om matchen är lika 
+
+    }
+
+    else 
+
+    {
+    
+      player = (player =='X') ? 'O' : 'X';
+      break;
+
+
+    }
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
