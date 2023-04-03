@@ -67,7 +67,7 @@
 
     <html>
         <head>
-        <title>Social Media Icons Neon Glow Effect</title>
+        <title>Social Media Effect</title>
         </head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -108,12 +108,53 @@
       
     </div>
 
-  <div class = "parallax">
-     div class = "https://media.istockphoto.com/id/537517821/photo/tropical-fish.jpg?b=1&s=170667a&w=0&k=20&c=UZnE6eQFGY0DdCKfsCEBEV3lTwKBFDuxRAr2w9Po4LY="> 
-     div class = "parallax-layer layer2"> LAYER 2 
-     div class = "parallax-layer layer3"> LAYER 3 
+  <body>
+  
+        <!-- ger titel t första parallaxen -->
+        <div class="parallax-1">
+            <h2>Corals</h2>
+        </div>
       
+        <!--Content av första -->
+        <div class="para-1">
+            <p>
+              Did you know that the ocean makes up 70% of the world, hence why the planet earth is often reffered to as "The blue planet"?
+            </p>
+        </div>
+      
+         <!-- Ger titel till förts parlaxxen -->
+    <div class="parallax-2">
+        <h2>Scubadiving</h2>
     </div>
+  
+    <!--Content av första paralaxxen  -->
+    <div class="para-2">
+        <p>THE OCEAN IS HOME TO 94% OF ALL LIFE ON EARTH </p>
+    </div>
+      
+    <!--Samma som första parallaxen-->
+    <div class="parallax-1">
+        <h2>Places</h2>
+    </div>
+  
+    <div class="para-2">
+        <p>
+              Croatia
+            Seychelles
+              Mexico
+            Italy
+            
+        </p>
+    </div>
+</body>
+  
+</html>
+          
+
+
+
+
+
 
 
 
@@ -443,25 +484,84 @@ box-shadow: inset 0 0 0 0 mediumseagreen;
 }
 
 
-.parallax
-body, html {
-            height: 100%;
-          }
-          
-          .parallax {
-            
-            background-image: url("https://media.istockphoto.com/id/537517821/photo/tropical-fish.jpg?b=1&s=170667a&w=0&k=20&c=UZnE6eQFGY0DdCKfsCEBEV3lTwKBFDuxRAr2w9Po4LY=");
-          
-            
-            height: 100%;
-          
-          
+.parallax-1 {
+            width: 100%;
+            height: 600px;
+            background: url(
+'https://www.treehugger.com/thmb/OLxBN3vbTzvgFCeUdlyIMXxu_M8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1279110759-d280cdc3b0b842c2bde02b8e5f7238a8.jpg');
+            background-size: 100% 100%;
             background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
+        }
+  
+        /* Titel */
+        .parallax-1 h2 {
+            margin: auto;
+            position: relative;
+            left: 500x;
+            top: 300px;
+            width: 250px;
+            height: 32px;
+            padding: 10px;
+            background-color: rgb(10, 10, 10);
+            color: white;
+            text-align: center;
+        }
 
+
+        .parallax-2 {
+            width: 100%;
+            height: 600px;
+            background: url(
+'https://www.healthfitnessrevolution.com/wp-content/uploads/2018/04/iStock-623176710.jpg');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+           /* Titel andra parallaxen*/
+           .parallax-2 h2 {
+            margin: auto;
+            position: relative;
+            left: 500x;
+            top: 300px;
+            width: 250px;
+            height: 37px;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana;
+        }
+
+
+          /* paragraph parallaxen 1 */
+          .para-1 {
+            padding: 50px;
+            background-color: black;
+            color: white;
+            font-size: 17px;
+        }
+  
+
+          /* samma sak men med andra parallaxen 2 */
+          .para-2 {
+            text-align: center;
+            padding: 25px;
+            font-size: 17px;
+            font-family: Verdana;
+            background-color: black;
+            color: white;
+        }
+
+
+
+
+
+
+
+
+
+   
 
 
     </style>
